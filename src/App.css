@@ -1,0 +1,22 @@
+.app-container {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: white;
+  position: relative;
+}
+
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+  position: relative;
+  z-index: 2;
+}
+
+.main-footer {
+  text-align: center;
+  padding: var(--space-lg);
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-lg);
+}

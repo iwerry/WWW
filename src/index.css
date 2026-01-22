@@ -1,0 +1,80 @@
+:root {
+  /* Color Palette - Elegant Dark Mode */
+  --color-bg: #121212;
+  /* Deep Graphite */
+  --color-text: #ffffff;
+  /* Stark White for contrast */
+  --color-text-muted: #a0a0a0;
+  --color-surface: rgba(255, 255, 255, 0.05);
+  /* Glassmorphism base */
+  --color-gold: #d4af37;
+  /* Metallic Gold */
+  --color-gold-glow: rgba(212, 175, 55, 0.4);
+  --color-border: rgba(255, 255, 255, 0.1);
+
+  /* Typography - Modern & Readable */
+  --font-main: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+
+  --text-xs: 1rem;
+  --text-sm: 1.125rem;
+  --text-base: 1.25rem;
+  /* 20px */
+  --text-lg: 1.5rem;
+  --text-xl: 2rem;
+  --text-2xl: 3rem;
+  /* Larger */
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 32px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Scrollbar dark mode */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}

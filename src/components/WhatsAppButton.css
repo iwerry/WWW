@@ -1,0 +1,36 @@
+.whatsapp-float {
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    text-decoration: none;
+}
+
+.tooltip {
+    position: absolute;
+    right: 70px;
+    background: white;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
+
+.whatsapp-float:hover .tooltip {
+    opacity: 1;
+}
