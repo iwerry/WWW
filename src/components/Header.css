@@ -93,7 +93,8 @@
     display: none;
     position: absolute;
     right: 0;
-    top: calc(100% + 15px);
+    top: calc(100% + 5px);
+    /* Reduced gap */
     background: rgba(18, 18, 18, 0.98);
     min-width: 320px;
     border: 1px solid var(--color-gold);
@@ -102,6 +103,17 @@
     backdrop-filter: blur(20px);
     z-index: 10000;
     padding: 15px;
+}
+
+/* Safe bridge to prevent menu from closing when moving mouse from button to menu */
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: transparent;
 }
 
 .dropdown:hover .dropdown-content {
