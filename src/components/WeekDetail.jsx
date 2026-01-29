@@ -39,7 +39,7 @@ const WeekDetail = ({ week, onClose }) => {
                         <div className="content-block video-block">
                             <h3><PlayCircle size={20} /> Aula Visual</h3>
                             <div className="video-wrapper">
-                                <video controls poster="/assets/Cartier-Bresson.jpg">
+                                <video controls poster={week.thumbnail || "/assets/DanielRodrigues/CAPA.jpg"}>
                                     <source src={week.content.video} type="video/mp4" />
                                     Seu navegador não suporta vídeo.
                                 </video>

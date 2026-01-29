@@ -1,3 +1,4 @@
+// Version: 1.1 - Added Week 2 Content
 export const curriculumData = [
     {
         id: 1,
@@ -6,27 +7,27 @@ export const curriculumData = [
         locked: false,
         thumbnail: "/assets/DanielRodrigues/Semana1.jpg",
         content: {
-            video: "/assets/O_Despertar_da_Luz.mp4",
+            video: "/assets/1_O_Despertar_da_Luz.mp4",
             audioPlaylist: [
                 {
                     title: "A Revolução das Mirrorless",
-                    src: "/assets/A_revolução_das_Mirrorless_e_sensores_CMOS.m4a"
+                    src: "/assets/1_A_revolução_das_Mirrorless_e_sensores_CMOS.m4a"
                 },
                 {
                     title: "Domine Exposição e Iluminação",
-                    src: "/assets/Domine_exposição,_zonas_e_iluminação.m4a"
+                    src: "/assets/1_Domine_exposição,_zonas_e_iluminação.m4a"
                 },
                 {
                     title: "Gestalt e o Momento Decisivo",
-                    src: "/assets/Gestalt_e_o_Momento_Decisivo_na_Fotografia.m4a"
+                    src: "/assets/1_Gestalt_e_o_Momento_Decisivo_na_Fotografia.m4a"
                 },
                 {
                     title: "IA na Fotografia: Ferramenta ou Muleta?",
-                    src: "/assets/IA_na_Fotografia_é_Ferramenta_ou_Muleta.m4a"
+                    src: "/assets/1_IA_na_Fotografia_é_Ferramenta_ou_Muleta.m4a"
                 },
                 {
                     title: "Técnica ou Visão no Futuro?",
-                    src: "/assets/Técnica_ou_Visão_no_Futuro_da_Fotografia (1).m4a"
+                    src: "/assets/1_Técnica_ou_Visão_no_Futuro_da_Fotografia (1).m4a"
                 }
             ],
             pdf: "/assets/Alfabetização_do_Olhar_Curso_de_Fotografia_60.pdf",
@@ -74,9 +75,55 @@ export const curriculumData = [
     {
         id: 2,
         title: "Semana 2: Composição e Enquadramento",
-        description: "Regra dos terços, linhas guia e simetria.",
-        locked: true,
-        content: {}
+        description: "Domine a arte de organizar elementos na imagem e o 'Momento Decisivo'.",
+        locked: false,
+        thumbnail: "/assets/DanielRodrigues/Semana2.jpg",
+        content: {
+            video: "/assets/2_Composição__O_Código_do_Olhar.mp4",
+            audioPlaylist: [
+                {
+                    title: "O Resgate do Olhar na Fotografia 60+",
+                    src: "/assets/2_O_resgate_do_olhar_na_fotografia_60+.m4a"
+                },
+                {
+                    title: "Engenharia Visual ou Poesia do Instante",
+                    src: "/assets/2_Engenharia_Visual_ou_Poesia_do_Instante.m4a"
+                },
+                {
+                    title: "A Gestalt no Olhar dos Grandes Mestres",
+                    src: "/assets/2_A_Gestalt_no_olhar_dos_grandes_mestres.m4a"
+                },
+                {
+                    title: "Fotos Impactantes com Gestalt e Instante Decisivo",
+                    src: "/assets/2_Fotos_Impactantes_com_Gestalt_e_Instante_Decisivo.m4a"
+                }
+            ],
+            pdf: "/assets/2 - Design_and_the_Decisive_Moment_60.pdf",
+            tips: [
+                "Aplique a Regra dos Terços para criar equilíbrio.",
+                "Procure por linhas guias que conduzam o olhar.",
+                "Aguarde o 'Momento Decisivo' antes de clicar."
+            ],
+            glossary: [
+                {
+                    category: "Composição e Gestalt",
+                    items: [
+                        { term: "Regra dos Terços", definition: "Uma técnica que envolve dividir a imagem em nove partes iguais por duas linhas horizontais e duas verticais, posicionando os elementos mais importantes nas interseções." },
+                        { term: "Momento Decisivo", definition: "Conceito popularizado por Henri Cartier-Bresson que se refere ao instante exato em que todos os elementos de uma cena se harmonizam visualmente e emocionalmente." },
+                        { term: "Linhas Guia", definition: "Caminhos visuais dentro de uma fotografia, como estradas ou cercas, que direcionam o olhar do espectador para o assunto principal ou através da cena." },
+                        { term: "Equilíbrio Simétrico", definition: "Ocorre quando ambos os lados de uma imagem têm peso visual igual, transmitindo uma sensação de ordem e calma." }
+                    ]
+                },
+                {
+                    category: "Técnicas de Enquadramento",
+                    items: [
+                        { term: "Ponto de Ouro", definition: "As quatro interseções criadas pela Regra dos Terços, onde o olho humano naturalmente foca primeiro em uma imagem." },
+                        { term: "Enquadramento Natural", definition: "O uso de elementos da cena (como janelas, galhos ou arcos) para cercar o assunto principal, criando profundidade e foco." },
+                        { term: "Perspectiva Forçada", definition: "Técnica que utiliza a ilusão de ótica para fazer um objeto parecer mais longe, mais perto, maior ou menor do que realmente é." }
+                    ]
+                }
+            ]
+        }
     },
     {
         id: 3,

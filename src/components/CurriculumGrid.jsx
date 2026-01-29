@@ -43,8 +43,8 @@ const CurriculumGrid = ({ curriculum, activeWeekId, onWeekSelect }) => {
                     <motion.div key={week.id} variants={itemVariants}>
                         <WeekCard
                             week={week}
-                            isActive={week.id <= activeWeekId}
-                            onSelect={() => onWeekSelect(week)}
+                            isActive={week.id === activeWeekId}
+                            onClick={() => onWeekSelect(week.id)}
                         />
                     </motion.div>
                 ))}
