@@ -89,8 +89,9 @@
     position: absolute;
     right: 0;
     top: calc(100% + 10px);
-    background: rgba(18, 18, 18, 0.95);
-    min-width: 240px;
+    background: rgba(18, 18, 18, 0.98);
+    min-width: 300px;
+    /* Wider for full list */
     border: 1px solid var(--color-gold);
     border-radius: 12px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
@@ -117,28 +118,74 @@
 }
 
 .dropdown-item {
+    width: 100%;
+    background: transparent;
+    border: none;
     padding: 12px 16px;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #888;
-    font-size: 0.85rem;
-    font-weight: 600;
+    text-align: left;
     transition: all 0.2s;
+    margin-bottom: 2px;
+}
+
+.dropdown-item.unlocked {
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-item.unlocked:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateX(5px);
 }
 
 .dropdown-item.locked {
-    opacity: 0.8;
+    opacity: 0.5;
+    cursor: not-allowed;
+    color: #666;
+}
+
+.week-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.week-number {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    text-transform: uppercase;
+}
+
+.week-title-short {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.lock-tag,
+.unlock-tag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
 }
 
 .lock-tag {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.3);
     color: #555;
-    font-size: 0.7rem;
-    padding: 2px 8px;
-    border-radius: 4px;
-    letter-spacing: 0.05em;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.unlock-tag {
+    background: rgba(198, 161, 89, 0.1);
+    color: var(--color-gold);
+    border: 1px solid var(--color-gold-glow);
 }
 
 .video-background {

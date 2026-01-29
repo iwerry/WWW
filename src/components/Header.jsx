@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Lock, Unlock } from 'lucide-react';
 import './Header.css';
 
 const Header = ({ curriculum, onWeekSelect }) => {
@@ -13,27 +13,32 @@ const Header = ({ curriculum, onWeekSelect }) => {
             <nav className="top-nav">
                 <div className="nav-logo">Prof. Daniel</div>
                 <div className="nav-links">
-                    {curriculum.slice(0, 2).map((week) => (
-                        <button
-                            key={week.id}
-                            className={`nav-link-btn ${week.locked ? 'nav-locked' : ''}`}
-                            onClick={() => !week.locked && onWeekSelect(week.id)}
-                            disabled={week.locked}
-                        >
-                            Semana {week.id}
-                        </button>
-                    ))}
-
                     <div className="dropdown">
                         <button className="nav-link-btn dropdown-trigger">
-                            Próximas Aulas <ChevronDown size={16} />
+                            Ver Aulas do Curso <ChevronDown size={16} />
                         </button>
                         <div className="dropdown-content">
-                            {curriculum.slice(2).map((week) => (
-                                <div key={week.id} className="dropdown-item locked">
-                                    <span>Semana {week.id}</span>
-                                    <span className="lock-tag">BLOQUEADO</span>
-                                </div>
+                            {curriculum.map((week) => (
+                                <button
+                                    key={week.id}
+                                    className={`dropdown-item ${week.locked ? 'locked' : 'unlocked'}`}
+                                    onClick={() => !week.locked && onWeekSelect(week.id)}
+                                    disabled={week.locked}
+                                >
+                                    <div className="week-info">
+                                        <span className="week-number">Semana {week.id}</span>
+                                        <span className="week-title-short">{week.title.split(':')[1] || week.title}</span>
+                                    </div>
+                                    {week.locked ? (
+                                        <span className="lock-tag">
+                                            <Lock size={12} /> BLOQUEADO
+                                        </span>
+                                    ) : (
+                                        <span className="unlock-tag">
+                                            <Unlock size={12} /> LIBERADO
+                                        </span>
+                                    )}
+                                </button>
                             ))}
                         </div>
                     </div>
