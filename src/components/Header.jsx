@@ -11,13 +11,16 @@ const Header = ({ onStartClick }) => {
         <div className="hero-container">
             {/* Background Image Layer */}
             <div className="video-background">
-                <motion.div
-                    className="hero-image"
-                    style={{
-                        backgroundImage: 'url(/assets/DanielRodrigues/CAPA.jpg)',
-                        y: y1
-                    }}
-                />
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="hero-video"
+                    poster="/assets/DanielRodrigues/CAPA.jpg"
+                >
+                    <source src="/assets/DanielRodrigues/Watchtower-of-Turkey_.mp4" type="video/mp4" />
+                </video>
                 <div className="video-overlay" />
             </div>
 
