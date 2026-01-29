@@ -13,7 +13,7 @@ const Header = ({ curriculum, onWeekSelect }) => {
             <nav className="top-nav">
                 <div className="nav-logo">Prof. Daniel</div>
                 <div className="nav-links">
-                    {curriculum.map((week) => (
+                    {curriculum.slice(0, 2).map((week) => (
                         <button
                             key={week.id}
                             className={`nav-link-btn ${week.locked ? 'nav-locked' : ''}`}
@@ -23,6 +23,20 @@ const Header = ({ curriculum, onWeekSelect }) => {
                             Semana {week.id}
                         </button>
                     ))}
+
+                    <div className="dropdown">
+                        <button className="nav-link-btn dropdown-trigger">
+                            Próximas Aulas <ChevronDown size={16} />
+                        </button>
+                        <div className="dropdown-content">
+                            {curriculum.slice(2).map((week) => (
+                                <div key={week.id} className="dropdown-item locked">
+                                    <span>Semana {week.id}</span>
+                                    <span className="lock-tag">BLOQUEADO</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </nav>
 
