@@ -3,13 +3,30 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import './Header.css';
 
-const Header = ({ onStartClick }) => {
+const Header = ({ curriculum, onWeekSelect }) => {
     const { scrollY } = useScroll();
     const y1 = useTransform(scrollY, [0, 500], [0, 200]);
 
     return (
         <div className="hero-container">
-            {/* Background Image Layer */}
+            {/* Elegant Top Navbar */}
+            <nav className="top-nav">
+                <div className="nav-logo">Prof. Daniel</div>
+                <div className="nav-links">
+                    {curriculum.map((week) => (
+                        <button
+                            key={week.id}
+                            className={`nav-link-btn ${week.locked ? 'nav-locked' : ''}`}
+                            onClick={() => !week.locked && onWeekSelect(week.id)}
+                            disabled={week.locked}
+                        >
+                            Semana {week.id}
+                        </button>
+                    ))}
+                </div>
+            </nav>
+
+            {/* Background Video Layer */}
             <div className="video-background">
                 <video
                     autoPlay
@@ -30,17 +47,16 @@ const Header = ({ onStartClick }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
             >
-                <h1>Alfabetize seu olhar</h1>
-                <p>Transforme momentos em memórias eternas.</p>
-
-                <motion.button
-                    className="cta-button"
-                    whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(212, 175, 55, 0.4)" }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={onStartClick}
+                <motion.span
+                    className="hero-badge"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.5 }}
                 >
-                    Entrar na Sala de Aula
-                </motion.button>
+                    CURSO MASTERCLASS
+                </motion.span>
+                <h1>Composição e Enquadramento</h1>
+                <p>Domine a arte de organizar elementos na imagem e o 'Momento Decisivo'.</p>
             </motion.div>
 
             <motion.div

@@ -26,7 +26,10 @@ function App() {
   return (
     <AudioProvider>
       <div className="app-container">
-        <Header onStartClick={() => setActiveWeekId(1)} />
+        <Header
+          curriculum={curriculumData}
+          onWeekSelect={handleWeekSelect}
+        />
 
         <main className="main-content">
           <CurriculumGrid
