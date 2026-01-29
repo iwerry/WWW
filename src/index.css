@@ -36,6 +36,10 @@
   --radius-lg: clamp(16px, 5vw, 32px);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: var(--font-main);

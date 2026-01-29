@@ -72,7 +72,7 @@ const Header = ({ curriculum, onWeekSelect }) => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5 }}
                 >
-                    CURSO MASTERCLASS
+                    CURSO FOTOGRAFIA
                 </motion.span>
                 <h1>Composição e Enquadramento</h1>
                 <p>Domine a arte de organizar elementos na imagem e o 'Momento Decisivo'.</p>
