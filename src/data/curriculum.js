@@ -129,8 +129,44 @@ export const curriculumData = [
         id: 3,
         title: "Semana 3: Luz e Sombra",
         description: "Entendendo contraste e volume.",
-        locked: true,
-        content: {}
+        locked: false,
+        content: {
+            video: "/assets/3_Perspectiva_&_Geometria_Urbana.mp4",
+            audioPlaylist: [
+                {
+                    title: "A Arquitetura Invisível da Fotografia",
+                    src: "/assets/3_A_arquitetura_invisível_da_fotografia.m4a"
+                },
+                {
+                    title: "A Foto Acontece na Mente, Não na Tela",
+                    src: "/assets/3_A_foto_acontece_na_mente,_não_na_tela.m4a"
+                },
+                {
+                    title: "Do Sistema de Zonas ao Momento Decisivo",
+                    src: "/assets/3_Do_Sistema_de_Zonas_ao_Momento_Decisivo.m4a"
+                },
+                {
+                    title: "Psicologia da Gestalt e o Instante Decisivo",
+                    src: "/assets/3_Psicologia_da_Gestalt_e_o_Instante_Decisivo.m4a"
+                }
+            ],
+            pdf: "/assets/3_Pintando_Com_A_Luz_60.pdf",
+            tips: [
+                "Observe as sombras nos diferentes horários do dia.",
+                "Tente fotografar contra a luz (silhueta) para destacar formas.",
+                "Use a luz lateral para realçar texturas e profundidade."
+            ],
+            glossary: [
+                {
+                    category: "Propriedades da Luz",
+                    items: [
+                        { term: "Luz Dura", definition: "Luz direta e intensa que cria sombras nítidas e alto contraste (ex: sol do meio-dia)." },
+                        { term: "Luz Suave", definition: "Luz difusa que envolve o sujeito, criando sombras graduais e transições suaves (ex: dias nublados)." },
+                        { term: "Contraluz", definition: "Quando a fonte de luz está atrás do sujeito, criando silhuetas ou halos iluminados." }
+                    ]
+                }
+            ]
+        }
     },
     {
         id: 4,
