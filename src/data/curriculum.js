@@ -130,6 +130,7 @@ export const curriculumData = [
         title: "Semana 3: Luz e Sombra",
         description: "Entendendo contraste e volume.",
         locked: false,
+        thumbnail: "/assets/DanielRodrigues/SEMANA3_optimized.jpg",
         content: {
             video: "/assets/3_Perspectiva_&_Geometria_Urbana.mp4",
             audioPlaylist: [
