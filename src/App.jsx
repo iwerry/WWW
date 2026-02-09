@@ -55,7 +55,7 @@ function App() {
         <InstagramButton />
 
         <footer className="main-footer">
-          <p>© 2026 Alfabetização do Olhar - Prof. Daniel</p>
+          <p>© 2026 Curso de Fotografia Edição Especial 60+ - Prof. Daniel Rodrigues</p>
         </footer>
       </div>
     </AudioProvider>

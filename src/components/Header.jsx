@@ -53,7 +53,7 @@ const Header = ({ curriculum, onWeekSelect }) => {
                     loop
                     playsInline
                     className="hero-video"
-                    poster="/assets/DanielRodrigues/CAPA.jpg"
+                /*poster="/assets/DanielRodrigues/CAPA.jpg"*/
                 >
                     <source src="/assets/DanielRodrigues/Watchtower-of-Turkey_.mp4" type="video/mp4" />
                 </video>
