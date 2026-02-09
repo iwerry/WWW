@@ -158,11 +158,15 @@ export const curriculumData = [
             ],
             glossary: [
                 {
-                    category: "Propriedades da Luz",
+                    category: "O Olhar Urbano (Glossário da Semana 3)",
                     items: [
-                        { term: "Luz Dura", definition: "Luz direta e intensa que cria sombras nítidas e alto contraste (ex: sol do meio-dia)." },
-                        { term: "Luz Suave", definition: "Luz difusa que envolve o sujeito, criando sombras graduais e transições suaves (ex: dias nublados)." },
-                        { term: "Contraluz", definition: "Quando a fonte de luz está atrás do sujeito, criando silhuetas ou halos iluminados." }
+                        { term: "Ângulo Picado (Bird’s-eye view)", definition: "Tirar a foto de um ponto elevado, olhando para baixo. Tende a fazer o assunto parecer menor ou mais vulnerável." },
+                        { term: "Ângulo Contrapicado (Worm’s-eye view)", definition: "Tirar a foto de um ponto baixo, olhando para cima. Dá uma sensação de poder, força ou superioridade ao que está sendo fotografado." },
+                        { term: "Momento Decisivo", definition: "Conceito de Cartier-Bresson que define o instante exato em que a forma e o significado de um evento se alinham perfeitamente em uma composição." },
+                        { term: "Linhas Guia (Leading Lines)", definition: "Elementos lineares na cena (como estradas, cercas ou sombras) que conduzem o olhar do espectador para dentro da imagem ou em direção ao assunto principal." },
+                        { term: "Perspectiva Linear", definition: "Um tipo de ilusão de profundidade onde linhas paralelas parecem convergir à medida que se afastam do observador, como visto na Ilusão de Ponzo." },
+                        { term: "Ritmo Urbano", definition: "A captura do movimento repetitivo ou cadenciado da vida na cidade, como o fluxo de pedestres, carros ou a alternância de luzes e sombras nas fachadas." },
+                        { term: "Ponto de Vista (Point of View)", definition: "A posição física do fotógrafo em relação ao assunto, que determina o que será revelado ou escondido na imagem final." }
                     ]
                 }
             ]
