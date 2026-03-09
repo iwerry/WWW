@@ -1,8 +1,8 @@
 # Cronograma de Atualizações - Alfabetização do Olhar 📸
 
-Este documento serve para acompanhar o progresso das atualizações semanais do portal da Masterclass de Fotografia.
+Este documento serve para acompanhar o progresso das atualizações do portal da Masterclass de Fotografia.
 
-## ✅ Semanas Concluídas
+## ✅ Semanas Concluídas e Acessíveis (Aulas 1 a 3)
 
 ### Semana 1: O Despertar do Olhar
 - [x] Desbloqueio de acesso.
@@ -13,47 +13,34 @@ Este documento serve para acompanhar o progresso das atualizações semanais do 
 
 ### Semana 2: Composição e Enquadramento
 - [x] Desbloqueio de acesso.
-- [x] Implementação do **Vídeo Hero** (Watchtower of Turkey) em loop no topo.
-- [x] Criação da **Navbar Masterclass** (Navegação direta para Semanas 1 e 2).
 - [x] Atualização da capa (Foto Daniel Rodrigues).
 - [x] Upload de Vídeo principal da aula.
 - [x] Novos Áudios (4 pílulas sobre Gestalt e Instante Decisivo).
 - [x] Glossário expandido (Técnicas de Enquadramento).
 
----
-
-## ⏳ Próximas Atualizações (A Desbloquear)
-
 ### Semana 3: Luz e Sombra
-- [ ] Definir vídeo da aula.
-- [ ] Preparar áudios específicos.
-- [ ] Criar material PDF.
-- [ ] Atualizar glossário (Contraste, Volume, Luz Dura/Suave).
-
-### Semana 4: Cores e Emoções
-- [ ] Teoria das cores na fotografia.
-- [ ] Psicologia cromática.
-
-### Semana 5: O Momento Decisivo
-- [ ] Aprofundamento no estilo Bresson.
-- [ ] Técnicas de antecipação.
-
-### Semana 6: Retrato e Identidade
-- [ ] Direção de pessoas.
-- [ ] Captura de expressões.
-
-### Semana 7: Paisagem e Natureza
-- [ ] Fotografia externa.
-- [ ] Uso da luz natural.
-
-### Semana 8: Projeto Final
-- [ ] Consolidação do Portfólio.
-- [ ] Revisão geral.
+- [x] Desbloqueio de acesso.
+- [x] Inserção da imagem de capa (Motocross).
+- [x] Vídeo da aula, áudios e pílulas do conhecimento de Cartier-Bresson incluídas.
+- [x] Dicas práticas e lista do Glossário atualizados.
 
 ---
 
-## 🛠 Notas Técnicas e Melhorias Atuais
-- **Design**: Estilo Dark Mode Premium com Glassmorphism.
-- **Navbar**: Dinâmica (detecta automaticamente semanas bloqueadas/desbloqueadas).
-- **Hero**: Vídeo responsivo com `object-fit: cover`.
-- **Deploy**: Sincronizado via GitHub -> Vercel.
+## ⏳ Próximas Atualizações (A Desbloquear em breve)
+
+**Semanas 4 a 8 (Bloqueadas):** 
+- [x] Novas imagens de fundo reais (Eventos, Estudos de Casos, Motocross) aplicadas aos cartões com visual escurecido sem apagar as cores (Glassmorphism + Overlay).
+- Estão aguardando apenas o destrancamento do conteúdo (Vídeos/Áudios) à medida que as datas chegam!
+
+---
+
+## 🛠 Novos Recursos e Melhorias Implementadas
+
+- **Vídeo Hero Dinâmico:** Hero do topo substituído por um vídeo do YouTube via `iframe` rodando suavemente em background e em loop.
+- **Sistema de Blog Moderno:** Criado um modal de blog expansível (`src/data/blogData.jsx`), preparado para receber 'N' matérias sem acumular conteúdo na tela inicial. Listagem em cards com botão "Voltar".
+- **Galeria de Imagens (Menu Dropdown):** Dois menus de galeria inseridos: "Fotos do Professor" (abrangendo Estudos de casos, Eventos e Motocross separados por abas interativas) e um placeholder para "Fotos dos Alunos".
+- **Carrossel de Referências Animado:** A faixa inferior na Home page (antes "Olhares da Turma") agora é "Referências de Estudo", mostrando obras de Estudos de Caso num letreiro infinito (CSS Keyframes) que pausa o movimento quando o mouse passa por cima.
+- **Navbar Dinâmica:** Menu "Blog" interativo que chama a estrutura do novo data-file via App State.
+
+## 🚀 Como lançar novas matérias no Blog
+Basta editar o arquivo `src/data/blogData.jsx`, adicionar um novo `{ id: 2, title: "Novo Post", ... }` na array `blogPosts`, dar o `git commit` e a plataforma atualizará o menu do Blog instantaneamente.
