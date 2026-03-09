@@ -175,11 +175,32 @@ export const curriculumData = [
     },
     {
         id: 4,
-        title: "Semana 4: Cores e Emoções",
-        description: "Psicologia das cores na fotografia.",
-        locked: true,
+        title: "Semana 4: A Maestria da Luz e Sombra",
+        description: "Aprenda a enxergar a luz e usar a sombra como tempero das fotos.",
+        locked: false,
         thumbnail: "/assets/Fotos/Eventos/IMG_4979.jpg",
-        content: {}
+        content: {
+            audioPlaylist: [
+                {
+                    title: "A sombra é o tempero do retrato",
+                    src: "/assets/4 - A_sombra_é_o_tempero_do_retrato.m4a"
+                },
+                {
+                    title: "Aprenda a enxergar a luz nas fotos",
+                    src: "/assets/4 - Aprenda_a_enxergar_a_luz_nas_fotos.m4a"
+                },
+                {
+                    title: "Luz de janela ou artificial na fotografia",
+                    src: "/assets/4 - Luz_de_janela_ou_artificial_na_fotografia.m4a"
+                }
+            ],
+            pdf: "/assets/4 - Light_and_Shadow_Mastery.pdf",
+            tips: [
+                "A sombra cria volume: Não tenha medo de áreas escuras, elas dão profundidade.",
+                "Luz de janela: Use a luz natural direcional para esculpir os traços em retratos.",
+                "Textura é sombra: Observe como a luz dura e rasteira revela todas as texturas."
+            ]
+        }
     },
     {
         id: 5,

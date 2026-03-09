@@ -24,11 +24,17 @@ Este documento serve para acompanhar o progresso das atualizações do portal da
 - [x] Vídeo da aula, áudios e pílulas do conhecimento de Cartier-Bresson incluídas.
 - [x] Dicas práticas e lista do Glossário atualizados.
 
+### Semana 4: A Maestria da Luz e Sombra
+- [x] Correção do nome do Módulo (alinhado com o material PDF e áudios).
+- [x] Desbloqueio de acesso.
+- [x] Upload de Áudios e Material de apoio (Ebook Light and Shadow Mastery).
+- [ ] Aguardando upload do Vídeo Hero (Em breve).
+
 ---
 
 ## ⏳ Próximas Atualizações (A Desbloquear em breve)
 
-**Semanas 4 a 8 (Bloqueadas):** 
+**Semanas 5 a 8 (Bloqueadas):** 
 - [x] Novas imagens de fundo reais (Eventos, Estudos de Casos, Motocross) aplicadas aos cartões com visual escurecido sem apagar as cores (Glassmorphism + Overlay).
 - Estão aguardando apenas o destrancamento do conteúdo (Vídeos/Áudios) à medida que as datas chegam!
 
