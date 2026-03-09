@@ -75,7 +75,7 @@ const Header = ({ curriculum, onWeekSelect }) => {
                     CURSO FOTOGRAFIA
                 </motion.span>
                 <h1>Alfabetização do Olhar</h1>
-                <p>O despertar do olhar: crie harmonia nas suas fotos e descubra a magia do 'Momento Decisivo'</p>
+                <p>O despertar do olhar e crie harmonia nas suas fotos.</p>
             </motion.div>
 
             <motion.div
