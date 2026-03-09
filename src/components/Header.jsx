@@ -74,8 +74,8 @@ const Header = ({ curriculum, onWeekSelect }) => {
                 >
                     CURSO FOTOGRAFIA
                 </motion.span>
-                <h1>Composição e Enquadramento</h1>
-                <p>Domine a arte de organizar elementos na imagem e o 'Momento Decisivo'.</p>
+                <h1>Alfabetização do Olhar</h1>
+                <p>O despertar do olhar: crie harmonia nas suas fotos e descubra a magia do 'Momento Decisivo'</p>
             </motion.div>
 
             <motion.div
