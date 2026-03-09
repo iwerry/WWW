@@ -24,8 +24,7 @@
 
 .week-card.locked {
     cursor: not-allowed;
-    opacity: 0.6;
-    background: rgba(0, 0, 0, 0.4);
+    filter: brightness(0.9) grayscale(20%);
 }
 
 .card-content {
