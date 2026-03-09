@@ -180,25 +180,58 @@ export const curriculumData = [
         locked: false,
         thumbnail: "/assets/Fotos/Eventos/IMG_4979.jpg",
         content: {
+            video: "/assets/4_Luz_e_Sombra.mp4",
             audioPlaylist: [
                 {
                     title: "A sombra é o tempero do retrato",
-                    src: "/assets/4 - A_sombra_é_o_tempero_do_retrato.m4a"
+                    src: "/assets/4_A_sombra_e_o_tempero_do_retrato.m4a"
                 },
                 {
                     title: "Aprenda a enxergar a luz nas fotos",
-                    src: "/assets/4 - Aprenda_a_enxergar_a_luz_nas_fotos.m4a"
+                    src: "/assets/4_Aprenda_a_enxergar_a_luz_nas_fotos.m4a"
                 },
                 {
                     title: "Luz de janela ou artificial na fotografia",
-                    src: "/assets/4 - Luz_de_janela_ou_artificial_na_fotografia.m4a"
+                    src: "/assets/4_Luz_de_janela_ou_artificial_na_fotografia.m4a"
+                },
+                {
+                    title: "A luz e o peso das memórias",
+                    src: "/assets/4_A_luz_e_o_peso_das_memorias.m4a"
                 }
             ],
-            pdf: "/assets/4 - Light_and_Shadow_Mastery.pdf",
+            pdf: "/assets/4_Light_and_Shadow_Mastery.pdf",
             tips: [
                 "A sombra cria volume: Não tenha medo de áreas escuras, elas dão profundidade.",
                 "Luz de janela: Use a luz natural direcional para esculpir os traços em retratos.",
                 "Textura é sombra: Observe como a luz dura e rasteira revela todas as texturas."
+            ],
+            glossary: [
+                {
+                    category: "Fundamentos da Luz e Contraste",
+                    items: [
+                        { term: "Luz Natural", definition: "É a luz fornecida pelo sol ou pela lua. Na fotografia, ela muda constantemente dependendo do horário do dia, da estação do ano e do clima (um dia nublado, por exemplo, funciona como um grande filtro suavizador natural)." },
+                        { term: "Luz Artificial", definition: "Qualquer fonte de luz criada pelo homem, como flashes, abajures, lanternas ou lâmpadas de LED. A grande vantagem é que você tem controle total sobre a direção e a intensidade dessa luz." },
+                        { term: "Contraste", definition: "É a diferença visual entre as partes mais claras (luzes) e as partes mais escuras (sombras) de uma imagem. Uma foto de alto contraste tem pretos profundos e brancos brilhantes, criando muito drama. Uma foto de baixo contraste é mais suave e acinzentada." },
+                        { term: "Sistema de Zonas (Zone System)", definition: "Um conceito brilhante criado pelo mestre Ansel Adams nos anos 1930. Ele divide todas as tonalidades de uma foto em \"zonas\", indo da Zona 0 (preto puro, sem detalhes) até a Zona X (branco puro), passando pela Zona V (cinza médio). Entender isso ajuda o fotógrafo a garantir que haja detalhes visíveis nas sombras e nas áreas iluminadas." }
+                    ]
+                },
+                {
+                    category: "Modificadores de Luz (Nossos Ajudantes Mágicos)",
+                    items: [
+                        { term: "Difusor (Diffuser)", definition: "Um material semitransparente (pode ser uma cortina fina ou um painel profissional) colocado entre a fonte de luz e o sujeito. Ele serve para \"espalhar\" a luz, deixando-a mais suave e com sombras menos marcadas." },
+                        { term: "Rebatedor (Reflector)", definition: "Uma superfície (como uma placa de isopor, papelão branco ou acessório fotográfico) colocada do lado oposto à fonte de luz. Ele \"rebate\" a luz de volta para o sujeito, preenchendo e clareando as sombras mais escuras do rosto ou do objeto." }
+                    ]
+                },
+                {
+                    category: "Padrões Clássicos de Iluminação para Retratos",
+                    items: [
+                        { term: "Iluminação Plana (Flat Lighting)", definition: "A luz vem diretamente de frente para a pessoa, na mesma direção da câmera. É o padrão menos dramático, pois quase não cria sombras no rosto, preenchendo as linhas de expressão e rugas, resultando em uma imagem muito lisonjeira e suave." },
+                        { term: "Iluminação Borboleta (Butterfly / Paramount)", definition: "A luz vem diretamente da frente, mas de um ponto mais alto, apontando para baixo no rosto da pessoa. Cria uma sombra elegante logo abaixo do nariz que lembra o formato de uma borboleta. É um estilo glamouroso muito usado nos antigos estúdios de cinema de Hollywood." },
+                        { term: "Iluminação Loop (Loop Lighting)", definition: "A luz é colocada a cerca de 45 graus para o lado e ligeiramente acima da altura dos olhos. Cria uma pequena sombra do lado do nariz que aponta para baixo, formando um \"laço\" (loop) na bochecha. É um padrão incrivelmente natural e lisonjeiro para quase todos os formatos de rosto." },
+                        { term: "Iluminação Rembrandt", definition: "Batizada em homenagem ao famoso pintor holandês, a luz ilumina um lado do rosto, enquanto o outro lado fica na sombra, exceto por um pequeno e charmoso \"triângulo de luz\" formado no osso da bochecha e no olho opostos. É uma iluminação muito dramática e artística, excelente para transmitir emoção profunda." },
+                        { term: "Iluminação Dividida (Split Lighting)", definition: "A luz vem de forma totalmente lateral (a 90 graus do rosto), iluminando metade da face e deixando a outra metade completamente na sombra (sem o triângulo do Rembrandt). É o estilo mais intenso e dramático, frequentemente usado para destacar texturas e transmitir força ou mistério." }
+                    ]
+                }
             ]
         }
     },

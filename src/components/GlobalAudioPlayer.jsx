@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useRef, useEffect } from 'react';
-import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX } from 'lucide-react';
+import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './GlobalAudioPlayer.css';
 
@@ -127,6 +127,15 @@ export const AudioProvider = ({ children }) => {
         resetIdleTimer();
     };
 
+    const closePlayer = () => {
+        setIsPlaying(false);
+        setCurrentTrack(null);
+        if (audioRef.current) {
+            audioRef.current.pause();
+            audioRef.current.currentTime = 0;
+        }
+    };
+
     return (
         <AudioContext.Provider value={{ playTrack, currentTrack }}>
             {children}
@@ -190,6 +199,9 @@ export const AudioProvider = ({ children }) => {
                                 onChange={(e) => setVolume(parseFloat(e.target.value))}
                                 className="volume-slider"
                             />
+                            <button className="control-btn-small" onClick={closePlayer} aria-label="Fechar Áudio" style={{ marginLeft: '10px' }}>
+                                <X size={20} />
+                            </button>
                         </div>
                     </motion.div>
                 )}

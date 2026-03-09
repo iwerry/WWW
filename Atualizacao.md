@@ -2,7 +2,7 @@
 
 Este documento serve para acompanhar o progresso das atualizações do portal da Masterclass de Fotografia.
 
-## ✅ Semanas Concluídas e Acessíveis (Aulas 1 a 3)
+## ✅ Semanas Concluídas e Acessíveis (Aulas 1 a 4)
 
 ### Semana 1: O Despertar do Olhar
 - [x] Desbloqueio de acesso.
@@ -27,8 +27,8 @@ Este documento serve para acompanhar o progresso das atualizações do portal da
 ### Semana 4: A Maestria da Luz e Sombra
 - [x] Correção do nome do Módulo (alinhado com o material PDF e áudios).
 - [x] Desbloqueio de acesso.
-- [x] Upload de Áudios e Material de apoio (Ebook Light and Shadow Mastery).
-- [ ] Aguardando upload do Vídeo Hero (Em breve).
+- [x] Upload de Áudios (adicionada a faixa extra "A luz e o peso das memórias") e Material de apoio (Ebook Light and Shadow Mastery).
+- [x] Upload do Vídeo principal da Aula (Luz & Sombra).
 
 ---
 
