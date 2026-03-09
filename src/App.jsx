@@ -5,6 +5,7 @@ import Header from './components/Header';
 import CurriculumGrid from './components/CurriculumGrid';
 import WeekDetail from './components/WeekDetail';
 import Gallery from './components/Gallery';
+import GalleryModal from './components/GalleryModal';
 import WhatsAppButton from './components/WhatsAppButton';
 import InstagramButton from './components/InstagramButton';
 import Newsletter from './components/Newsletter';
@@ -13,6 +14,8 @@ import { AnimatePresence } from 'framer-motion';
 
 function App() {
   const [activeWeekId, setActiveWeekId] = useState(null);
+  const [activeGallery, setActiveGallery] = useState(null); // 'amostra' | 'alunos' | null
+
   const activeWeek = activeWeekId ? curriculumData.find(w => w.id === activeWeekId) : null;
 
   const handleWeekSelect = (id) => {
@@ -23,12 +26,21 @@ function App() {
     setActiveWeekId(null);
   };
 
+  const handleOpenGallery = (type) => {
+    setActiveGallery(type);
+  };
+
+  const handleCloseGallery = () => {
+    setActiveGallery(null);
+  };
+
   return (
     <AudioProvider>
       <div className="app-container">
         <Header
           curriculum={curriculumData}
           onWeekSelect={handleWeekSelect}
+          onOpenGallery={handleOpenGallery}
         />
 
         <main className="main-content">
@@ -47,6 +59,13 @@ function App() {
             <WeekDetail
               week={activeWeek}
               onClose={handleCloseDetail}
+            />
+          )}
+
+          {activeGallery && (
+            <GalleryModal
+              type={activeGallery}
+              onClose={handleCloseGallery}
             />
           )}
         </AnimatePresence>

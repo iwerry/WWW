@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronDown, Lock, Unlock } from 'lucide-react';
 import './Header.css';
 
-const Header = ({ curriculum, onWeekSelect }) => {
+const Header = ({ curriculum, onWeekSelect, onOpenGallery }) => {
     const { scrollY } = useScroll();
     const y1 = useTransform(scrollY, [0, 500], [0, 200]);
 
@@ -13,6 +13,30 @@ const Header = ({ curriculum, onWeekSelect }) => {
             <nav className="top-nav">
                 <div className="nav-logo">Prof. Daniel</div>
                 <div className="nav-links">
+                    {/* Botão Blog (Simples) */}
+                    <button className="nav-link-btn" onClick={() => alert('Em breve: Blog interno com matérias sobre fotografia!')}>
+                        Blog
+                    </button>
+
+                    {/* Galeria Dropdown */}
+                    <div className="dropdown">
+                        <button className="nav-link-btn dropdown-trigger">
+                            Galeria <ChevronDown size={16} />
+                        </button>
+                        <div className="dropdown-content" style={{ minWidth: '220px' }}>
+                            <button className="dropdown-item unlocked" onClick={() => onOpenGallery('amostra')}>
+                                <div className="week-info">
+                                    <span className="week-title-short">Fotos do Professor</span>
+                                </div>
+                            </button>
+                            <button className="dropdown-item unlocked" onClick={() => onOpenGallery('alunos')}>
+                                <div className="week-info">
+                                    <span className="week-title-short">Fotos dos Alunos</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
                     <div className="dropdown">
                         <button className="nav-link-btn dropdown-trigger">
                             Ver Aulas do Curso <ChevronDown size={16} />
