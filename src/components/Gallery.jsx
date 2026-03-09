@@ -15,8 +15,8 @@ const Gallery = () => {
     return (
         <section className="gallery-section">
             <div className="gallery-header">
-                <h2>Estude de Casos</h2>
-                <p>Alguns casos que já precisei estudar e quero compartilhar com você.</p>
+                <h2>Referências de Estudo</h2>
+                <p>Fotos de referência de estudo que o professor disponibilizou.</p>
             </div>
 
             <div className="gallery-carousel">

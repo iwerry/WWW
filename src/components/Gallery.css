@@ -20,20 +20,25 @@
 }
 
 .gallery-carousel {
-    overflow-x: auto;
+    overflow: hidden;
     padding: 20px 0;
-    /* Hide scrollbar */
-    scrollbar-width: none;
-}
-
-.gallery-carousel::-webkit-scrollbar {
-    display: none;
+    white-space: nowrap;
 }
 
 .gallery-track {
-    display: flex;
+    display: inline-flex;
     gap: 20px;
     width: max-content;
+    animation: scrollTrack 30s linear infinite;
+}
+
+.gallery-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollTrack {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 10px)); }
 }
 
 .gallery-item {
