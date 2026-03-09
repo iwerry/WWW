@@ -3,12 +3,13 @@ import { motion } from 'framer-motion';
 import './Gallery.css';
 
 const Gallery = () => {
-    // Placeholder images - in real app would come from props/data
     const photos = [
-        "/assets/Cartier-Bresson.jpg",
-        "/assets/Cartier-Bresson.jpg",
-        "/assets/Cartier-Bresson.jpg",
-        "/assets/Cartier-Bresson.jpg"
+        "/assets/Fotos/EstudosDeCasos/162666e9-3d05-4aeb-b6f0-c11195c9223f.jpg",
+        "/assets/Fotos/EstudosDeCasos/17db21746b9072483e467df671a15877.jpg",
+        "/assets/Fotos/EstudosDeCasos/28d1990fab39d45ef5db023bf14d7fbe.jpg",
+        "/assets/Fotos/EstudosDeCasos/73afa0e9-c2b2-4bcc-b2c3-76c3107cc4f8.jpg",
+        "/assets/Fotos/EstudosDeCasos/f0ade5dc-d3ce-497c-a9cd-a5b29d717ab3.jpg",
+        "/assets/Fotos/EstudosDeCasos/f7a1006d60b7587d6244511d0682d3e4.jpg"
     ];
 
     return (
