@@ -178,6 +178,7 @@ export const curriculumData = [
         title: "Semana 4: Cores e Emoções",
         description: "Psicologia das cores na fotografia.",
         locked: true,
+        thumbnail: "/assets/Fotos/EstudosDeCasos/162666e9-3d05-4aeb-b6f0-c11195c9223f.jpg",
         content: {}
     },
     {
@@ -185,6 +186,7 @@ export const curriculumData = [
         title: "Semana 5: O Momento Decisivo",
         description: "Capturando a essência da ação.",
         locked: true,
+        thumbnail: "/assets/Fotos/Eventos/IMG_1474.jpg",
         content: {}
     },
     {
@@ -192,6 +194,7 @@ export const curriculumData = [
         title: "Semana 6: Retrato e Identidade",
         description: "Fotografando pessoas e expressões.",
         locked: true,
+        thumbnail: "/assets/Fotos/EstudosDeCasos/17db21746b9072483e467df671a15877.jpg",
         content: {}
     },
     {
@@ -199,6 +202,7 @@ export const curriculumData = [
         title: "Semana 7: Paisagem e Natureza",
         description: "A grandiosidade do mundo ao nosso redor.",
         locked: true,
+        thumbnail: "/assets/Fotos/EstudosDeCasos/28d1990fab39d45ef5db023bf14d7fbe.jpg",
         content: {}
     },
     {
@@ -206,6 +210,7 @@ export const curriculumData = [
         title: "Semana 8: Projeto Final",
         description: "Consolidando seu portfólio.",
         locked: true,
+        thumbnail: "/assets/Fotos/Motocross/IMG_5929.jpg",
         content: {}
     }
 ];
