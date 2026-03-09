@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronDown, Lock, Unlock } from 'lucide-react';
 import './Header.css';
 
-const Header = ({ curriculum, onWeekSelect, onOpenGallery }) => {
+const Header = ({ curriculum, onWeekSelect, onOpenGallery, onOpenBlog }) => {
     const { scrollY } = useScroll();
     const y1 = useTransform(scrollY, [0, 500], [0, 200]);
 
@@ -14,7 +14,7 @@ const Header = ({ curriculum, onWeekSelect, onOpenGallery }) => {
                 <div className="nav-logo">Prof. Daniel</div>
                 <div className="nav-links">
                     {/* Botão Blog (Simples) */}
-                    <button className="nav-link-btn" onClick={() => alert('Em breve: Blog interno com matérias sobre fotografia!')}>
+                    <button className="nav-link-btn" onClick={onOpenBlog}>
                         Blog
                     </button>
 
@@ -70,17 +70,15 @@ const Header = ({ curriculum, onWeekSelect, onOpenGallery }) => {
             </nav>
 
             {/* Background Video Layer */}
-            <div className="video-background">
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
+            <div className="video-background" style={{ overflow: 'hidden' }}>
+                <iframe
                     className="hero-video"
-                /*poster="/assets/DanielRodrigues/CAPA.jpg"*/
-                >
-                    <source src="/assets/DanielRodrigues/Watchtower-of-Turkey_.mp4" type="video/mp4" />
-                </video>
+                    src="https://www.youtube.com/embed/1m6EP9l4xI8?autoplay=1&mute=1&loop=1&playlist=1m6EP9l4xI8&controls=0&showinfo=0&rel=0&disablekb=1&modestbranding=1&playsinline=1"
+                    title="Hero Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    style={{ pointerEvents: 'none', transform: 'scale(1.5)', width: '100%', height: '100%' }}
+                ></iframe>
                 <div className="video-overlay" />
             </div>
 

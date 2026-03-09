@@ -5,6 +5,7 @@ import Header from './components/Header';
 import CurriculumGrid from './components/CurriculumGrid';
 import WeekDetail from './components/WeekDetail';
 import Gallery from './components/Gallery';
+import BlogModal from './components/BlogModal';
 import GalleryModal from './components/GalleryModal';
 import WhatsAppButton from './components/WhatsAppButton';
 import InstagramButton from './components/InstagramButton';
@@ -15,6 +16,7 @@ import { AnimatePresence } from 'framer-motion';
 function App() {
   const [activeWeekId, setActiveWeekId] = useState(null);
   const [activeGallery, setActiveGallery] = useState(null); // 'amostra' | 'alunos' | null
+  const [isBlogOpen, setIsBlogOpen] = useState(false);
 
   const activeWeek = activeWeekId ? curriculumData.find(w => w.id === activeWeekId) : null;
 
@@ -34,6 +36,9 @@ function App() {
     setActiveGallery(null);
   };
 
+  const handleOpenBlog = () => setIsBlogOpen(true);
+  const handleCloseBlog = () => setIsBlogOpen(false);
+
   return (
     <AudioProvider>
       <div className="app-container">
@@ -41,6 +46,7 @@ function App() {
           curriculum={curriculumData}
           onWeekSelect={handleWeekSelect}
           onOpenGallery={handleOpenGallery}
+          onOpenBlog={handleOpenBlog}
         />
 
         <main className="main-content">
@@ -67,6 +73,10 @@ function App() {
               type={activeGallery}
               onClose={handleCloseGallery}
             />
+          )}
+
+          {isBlogOpen && (
+            <BlogModal onClose={handleCloseBlog} />
           )}
         </AnimatePresence>
 
