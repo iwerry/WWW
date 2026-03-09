@@ -13,7 +13,13 @@ const Gallery = () => {
     ];
 
     return (
-        <section className="gallery-section">
+        <motion.section 
+            className="gallery-section"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, margin: "-100px" }}
+        >
             <div className="gallery-header">
                 <h2>Referências de Estudo</h2>
                 <p>Fotos de referência de estudo que o professor disponibilizou.</p>
@@ -41,7 +47,7 @@ const Gallery = () => {
                     ))}
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 

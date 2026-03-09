@@ -31,7 +31,15 @@ const CurriculumGrid = ({ curriculum, activeWeekId, onWeekSelect }) => {
 
     return (
         <section className="curriculum-section">
-            <h2 className="section-title">Nossa Jornada</h2>
+            <motion.h2 
+                className="section-title"
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+            >
+                Nossa Jornada
+            </motion.h2>
             <motion.div
                 className="curriculum-grid"
                 variants={containerVariants}

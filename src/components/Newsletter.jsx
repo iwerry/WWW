@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail } from 'lucide-react';
+import { motion } from 'framer-motion';
 import './Newsletter.css';
 
 const Newsletter = () => {
@@ -40,7 +41,13 @@ const Newsletter = () => {
     };
 
     return (
-        <section className="newsletter-section">
+        <motion.section 
+            className="newsletter-section"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, margin: "-100px" }}
+        >
             <div className="newsletter-container">
                 <Mail size={32} className="newsletter-icon" />
                 <h3>Fique por dentro das novidades</h3>
@@ -67,7 +74,7 @@ const Newsletter = () => {
                     <p className="newsletter-message error">Erro ao inscrever. Tente novamente.</p>
                 )}
             </div>
-        </section>
+        </motion.section>
     );
 };
 
