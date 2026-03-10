@@ -334,12 +334,12 @@
 
     .nav-links.mobile-open {
         display: flex;
-        animation: dropdownFadeMobile 0.3s ease forwards;
+        animation: dropdownFade 0.3s ease forwards;
     }
 
     .nav-link-btn {
         width: 100%;
-        max-width: 300px;
+        max-width: 100%;
         justify-content: center;
         padding: 12px 20px;
         font-size: 1rem;
@@ -347,7 +347,7 @@
 
     .dropdown {
         width: 100%;
-        max-width: 300px;
+        max-width: 100%;
         text-align: center;
     }
 
