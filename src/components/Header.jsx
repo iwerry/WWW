@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ChevronDown, Lock, Unlock } from 'lucide-react';
+import { ChevronDown, Lock, Unlock, Menu, X } from 'lucide-react';
 import './Header.css';
 
 const Header = ({ curriculum, onWeekSelect, onOpenGallery, onOpenBlog }) => {
     const { scrollY } = useScroll();
     const y1 = useTransform(scrollY, [0, 500], [0, 200]);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
     return (
         <div className="hero-container">
             {/* Elegant Top Navbar */}
             <nav className="top-nav">
-                <div className="nav-logo">Prof. Daniel</div>
-                <div className="nav-links">
+                <div className="nav-header">
+                    <div className="nav-logo">Prof. Daniel</div>
+                    <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+                        {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                    </button>
+                </div>
+                <div className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
                     {/* Botão Blog (Simples) */}
                     <button className="nav-link-btn" onClick={onOpenBlog}>
                         Blog
