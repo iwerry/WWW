@@ -308,13 +308,18 @@
 
 @media (max-width: 900px) {
     .top-nav {
-        padding: 20px;
-        flex-direction: column;
+        padding: 15px 20px;
+        display: block;
         background: rgba(0, 0, 0, 0.95);
         backdrop-filter: blur(15px);
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
     }
 
@@ -323,13 +328,14 @@
     }
 
     .nav-links {
-        display: none; /* Hidden by default on mobile */
+        display: none;
         width: 100%;
         flex-direction: column;
-        gap: 15px;
-        margin-top: 20px;
+        gap: 12px;
+        margin-top: 25px;
         padding-bottom: 20px;
-        align-items: center;
+        align-items: stretch;
+        box-sizing: border-box;
     }
 
     .nav-links.mobile-open {
@@ -339,40 +345,52 @@
 
     .nav-link-btn {
         width: 100%;
-        max-width: 100%;
+        max-width: none;
+        display: flex;
         justify-content: center;
-        padding: 12px 20px;
+        align-items: center;
+        padding: 15px;
         font-size: 1rem;
+        box-sizing: border-box;
+        margin: 0;
+        transform: none !important;
     }
 
     .dropdown {
         width: 100%;
-        max-width: 100%;
-        text-align: center;
+        display: block;
     }
 
     .dropdown-trigger {
         width: 100%;
         justify-content: center;
+        transform: none !important;
     }
 
     .dropdown-content {
-        left: 50%;
-        right: auto;
-        transform: translateX(-50%);
-        min-width: 90vw;
-        max-width: 95vw;
+        position: static;
+        display: none;
+        transform: none !important;
+        animation: none !important;
+        min-width: 100%;
+        width: 100%;
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(212, 175, 55, 0.3);
+        margin-top: 5px;
         padding: 10px;
+        border-radius: 8px;
     }
 
-    .dropdown:hover .dropdown-content {
-        animation: dropdownFadeMobile 0.3s ease forwards;
-        transform: translateX(-50%);
+    .dropdown:hover .dropdown-content,
+    .dropdown:active .dropdown-content {
+        display: block;
+        transform: none !important;
+        animation: none !important;
     }
 
     .hero-container {
         height: 100vh;
-        /* Full height on mobile */
     }
 
     .hero-content h1 {
