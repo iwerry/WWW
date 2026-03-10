@@ -113,11 +113,11 @@ export const AudioProvider = ({ children }) => {
         resetIdleTimer();
     };
 
-    const handleProgressClick = (e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        const percent = (e.clientX - rect.left) / rect.width;
-        if (audioRef.current) {
-            audioRef.current.currentTime = percent * audioRef.current.duration;
+    const handleProgressChange = (e) => {
+        const newProgress = parseFloat(e.target.value);
+        setProgress(newProgress);
+        if (audioRef.current && audioRef.current.duration) {
+            audioRef.current.currentTime = (newProgress / 100) * audioRef.current.duration;
         }
         resetIdleTimer();
     };
@@ -182,8 +182,19 @@ export const AudioProvider = ({ children }) => {
                             </button>
                         </div>
 
-                        <div className="player-progress-bar" onClick={handleProgressClick}>
-                            <div className="progress-fill-global" style={{ width: `${progress}%` }} />
+                        <div className="player-progress-container">
+                            <input
+                                type="range"
+                                min="0"
+                                max="100"
+                                step="0.1"
+                                value={progress || 0}
+                                onChange={handleProgressChange}
+                                className="progress-slider"
+                                style={{
+                                    background: `linear-gradient(to right, var(--color-gold) ${progress}%, rgba(255, 255, 255, 0.1) ${progress}%)`
+                                }}
+                            />
                         </div>
 
                         <div className="player-controls-right">

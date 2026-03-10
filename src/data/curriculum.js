@@ -11,23 +11,23 @@ export const curriculumData = [
             audioPlaylist: [
                 {
                     title: "A Revolução das Mirrorless",
-                    src: "/assets/1_A_revolução_das_Mirrorless_e_sensores_CMOS.m4a"
+                    src: "/assets/1_A_revolução_das_Mirrorless_e_sensores_CMOS.mp3"
                 },
                 {
                     title: "Domine Exposição e Iluminação",
-                    src: "/assets/1_Domine_exposição,_zonas_e_iluminação.m4a"
+                    src: "/assets/1_Domine_exposição,_zonas_e_iluminação.mp3"
                 },
                 {
                     title: "Gestalt e o Momento Decisivo",
-                    src: "/assets/1_Gestalt_e_o_Momento_Decisivo_na_Fotografia.m4a"
+                    src: "/assets/1_Gestalt_e_o_Momento_Decisivo_na_Fotografia.mp3"
                 },
                 {
                     title: "IA na Fotografia: Ferramenta ou Muleta?",
-                    src: "/assets/1_IA_na_Fotografia_é_Ferramenta_ou_Muleta.m4a"
+                    src: "/assets/1_IA_na_Fotografia_é_Ferramenta_ou_Muleta.mp3"
                 },
                 {
                     title: "Técnica ou Visão no Futuro?",
-                    src: "/assets/1_Técnica_ou_Visão_no_Futuro_da_Fotografia (1).m4a"
+                    src: "/assets/1_Técnica_ou_Visão_no_Futuro_da_Fotografia (1).mp3"
                 }
             ],
             pdf: "/assets/Alfabetização_do_Olhar_Curso_de_Fotografia_60.pdf",
@@ -83,19 +83,19 @@ export const curriculumData = [
             audioPlaylist: [
                 {
                     title: "O Resgate do Olhar na Fotografia 60+",
-                    src: "/assets/2_O_resgate_do_olhar_na_fotografia_60+.m4a"
+                    src: "/assets/2_O_resgate_do_olhar_na_fotografia_60+.mp3"
                 },
                 {
                     title: "Engenharia Visual ou Poesia do Instante",
-                    src: "/assets/2_Engenharia_Visual_ou_Poesia_do_Instante.m4a"
+                    src: "/assets/2_Engenharia_Visual_ou_Poesia_do_Instante.mp3"
                 },
                 {
                     title: "A Gestalt no Olhar dos Grandes Mestres",
-                    src: "/assets/2_A_Gestalt_no_olhar_dos_grandes_mestres.m4a"
+                    src: "/assets/2_A_Gestalt_no_olhar_dos_grandes_mestres.mp3"
                 },
                 {
                     title: "Fotos Impactantes com Gestalt e Instante Decisivo",
-                    src: "/assets/2_Fotos_Impactantes_com_Gestalt_e_Instante_Decisivo.m4a"
+                    src: "/assets/2_Fotos_Impactantes_com_Gestalt_e_Instante_Decisivo.mp3"
                 }
             ],
             pdf: "/assets/2 - Design_and_the_Decisive_Moment_60.pdf",
@@ -136,19 +136,19 @@ export const curriculumData = [
             audioPlaylist: [
                 {
                     title: "A Arquitetura Invisível da Fotografia",
-                    src: "/assets/3_A_arquitetura_invisível_da_fotografia.m4a"
+                    src: "/assets/3_A_arquitetura_invisível_da_fotografia.mp3"
                 },
                 {
                     title: "A Foto Acontece na Mente, Não na Tela",
-                    src: "/assets/3_A_foto_acontece_na_mente,_não_na_tela.m4a"
+                    src: "/assets/3_A_foto_acontece_na_mente,_não_na_tela.mp3"
                 },
                 {
                     title: "Do Sistema de Zonas ao Momento Decisivo",
-                    src: "/assets/3_Do_Sistema_de_Zonas_ao_Momento_Decisivo.m4a"
+                    src: "/assets/3_Do_Sistema_de_Zonas_ao_Momento_Decisivo.mp3"
                 },
                 {
                     title: "Psicologia da Gestalt e o Instante Decisivo",
-                    src: "/assets/3_Psicologia_da_Gestalt_e_o_Instante_Decisivo.m4a"
+                    src: "/assets/3_Psicologia_da_Gestalt_e_o_Instante_Decisivo.mp3"
                 }
             ],
             pdf: "/assets/3_Pintando_Com_A_Luz_60.pdf",
@@ -184,19 +184,19 @@ export const curriculumData = [
             audioPlaylist: [
                 {
                     title: "A sombra é o tempero do retrato",
-                    src: "/assets/4_A_sombra_e_o_tempero_do_retrato.m4a"
+                    src: "/assets/4_A_sombra_e_o_tempero_do_retrato.mp3"
                 },
                 {
                     title: "Aprenda a enxergar a luz nas fotos",
-                    src: "/assets/4_Aprenda_a_enxergar_a_luz_nas_fotos.m4a"
+                    src: "/assets/4_Aprenda_a_enxergar_a_luz_nas_fotos.mp3"
                 },
                 {
                     title: "Luz de janela ou artificial na fotografia",
-                    src: "/assets/4_Luz_de_janela_ou_artificial_na_fotografia.m4a"
+                    src: "/assets/4_Luz_de_janela_ou_artificial_na_fotografia.mp3"
                 },
                 {
                     title: "A luz e o peso das memórias",
-                    src: "/assets/4_A_luz_e_o_peso_das_memorias.m4a"
+                    src: "/assets/4_A_luz_e_o_peso_das_memorias.mp3"
                 }
             ],
             pdf: "/assets/4_Light_and_Shadow_Mastery.pdf",
