@@ -28,21 +28,28 @@
 }
 
 .gallery-close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: transparent;
-    border: none;
-    color: var(--color-text-muted);
+    position: sticky;
+    float: right;
+    top: -10px;
+    background: rgba(40, 40, 40, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
     cursor: pointer;
-    transition: color 0.3s;
+    z-index: 50;
+    transition: background 0.2s, transform 0.2s;
+    margin-right: -10px;
 }
 
 .gallery-close-btn:hover {
-    color: var(--color-gold);
+    background: rgba(212, 175, 55, 0.4);
+    transform: scale(1.1);
 }
 
 .gallery-header-section {
+    clear: both;
     text-align: center;
     margin-bottom: 20px;
 }
