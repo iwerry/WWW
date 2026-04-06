@@ -68,13 +68,25 @@ const WeekDetail = ({ week, onClose }) => {
 
                     {/* Sidebar: Tips & PDF */}
                     <div className="sidebar-blocks">
-                        <div className="content-block pdf-block">
-                            <h3><FileText size={20} /> Material de Apoio</h3>
-                            <p>Aprofunde seus estudos com o ebook.</p>
-                            <a href={week.content.pdf} target="_blank" rel="noopener noreferrer" className="action-btn">
-                                Baixar PDF
-                            </a>
-                        </div>
+                        {(week.content.pdf || week.content.pdfs) && (
+                            <div className="content-block pdf-block">
+                                <h3><FileText size={20} /> Material de Apoio</h3>
+                                <p>Aprofunde seus estudos com o ebook.</p>
+                                {week.content.pdfs ? (
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                                        {week.content.pdfs.map((pdfItem, idx) => (
+                                            <a key={idx} href={pdfItem.url} target="_blank" rel="noopener noreferrer" className="action-btn">
+                                                {pdfItem.title || "Baixar PDF"}
+                                            </a>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <a href={week.content.pdf} target="_blank" rel="noopener noreferrer" className="action-btn">
+                                        Baixar PDF
+                                    </a>
+                                )}
+                            </div>
+                        )}
 
                         {week.content.tips && (
                             <div className="content-block tips-block">

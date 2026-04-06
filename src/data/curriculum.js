@@ -237,32 +237,59 @@ export const curriculumData = [
     },
     {
         id: 5,
-        title: "Semana 5: O Momento Decisivo",
-        description: "Capturando a essência da ação.",
-        locked: true,
+        title: "Semana 5: Fotografia de Pessoas",
+        description: "Dominando a arte do retrato e iluminação para pessoas.",
+        locked: false,
         thumbnail: "/assets/Fotos/Motocross/_MG_9626.jpg",
-        content: {}
+        content: {
+            video: "/assets/5 - Dominando_a_Arte_do_Retrato.mp4",
+            audioPlaylist: [
+                { title: "A neurociência do olhar de Cartier-Bresson", src: "/assets/5 - A_neurociência_do_olhar_de_Cartier-Bresson.mp3" },
+                { title: "Como a luz de estúdio esculpe rostos", src: "/assets/5 - Como_a_luz_de_estúdio_esculpe_rostos.mp3" },
+                { title: "Como tirar retratos profissionais na janela", src: "/assets/5 - Como_tirar_retratos_profissionais_na_janela.mp3" },
+                { title: "Luz natural ou flash no retrato", src: "/assets/5 - Luz_natural_ou_flash_no_retrato.mp3" },
+                { title: "Retratos com alma além da técnica", src: "/assets/5 - Retratos_com_alma_além_da_técnica.mp3" }
+            ],
+            pdfs: [
+                { title: "The Sculpted Portrait", url: "/assets/5 - The_Sculpted_Portrait.pdf" },
+                { title: "Arquitetura da Pose", url: "/assets/5.1 - Arquitetura_da_Pose.pdf" }
+            ],
+            tips: [
+                "A luz e a sombra esculpem o rosto - observe como pequenas mudanças de direção afetam a textura e a forma.",
+                "Para retratos na janela, direcione seu modelo um pouco para a luz para iluminar os olhos.",
+                "Não esqueça que a expressão é tão importante quanto a técnica de iluminação."
+            ]
+        }
     },
     {
         id: 6,
-        title: "Semana 6: Retrato e Identidade",
-        description: "Fotografando pessoas e expressões.",
-        locked: true,
+        title: "Semana 6: Fotografando Objetos",
+        description: "A arte de fotografar produtos, comida e e-commerce.",
+        locked: false,
         thumbnail: "/assets/Fotos/Eventos/_MG_2580.jpg",
-        content: {}
+        content: {
+            audioPlaylist: [
+                { title: "A arte de esculpir produtos com luz", src: "/assets/6 - A_arte_de_esculpir_produtos_com_luz.mp3" },
+                { title: "A física da luz em superfícies reflexivas", src: "/assets/6 - A_física_da_luz_em_superfícies_reflexivas.mp3" },
+                { title: "Gestalt e sombras no e-commerce autoral", src: "/assets/6 - Gestalt_e_sombras_no_e-commerce_autoral.mp3" },
+                { title: "Iluminação profissional para fotos de comida", src: "/assets/6 - Iluminação_profissional_para_fotos_de_comida.mp3" },
+                { title: "Luz natural ou flash na fotografia still", src: "/assets/6 - Luz_natural_ou_flash_na_fotografia_still.mp3" }
+            ],
+            pdf: "/assets/6 -The_Tabletop_Studio.pdf"
+        }
     },
     {
         id: 7,
-        title: "Semana 7: Paisagem e Natureza",
-        description: "A grandiosidade do mundo ao nosso redor.",
+        title: "Semana 7: Edição de fotografia",
+        description: "Finalizando sua visão através da edição.",
         locked: true,
         thumbnail: "/assets/Fotos/Motocross/_MG_9597.jpg",
         content: {}
     },
     {
         id: 8,
-        title: "Semana 8: Projeto Final",
-        description: "Consolidando seu portfólio.",
+        title: "Semana 8: Portfólio",
+        description: "Consolidando seu projeto final e portfólio.",
         locked: true,
         thumbnail: "/assets/Fotos/Motocross/IMG_4192.jpg",
         content: {}
