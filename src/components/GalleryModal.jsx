@@ -130,7 +130,20 @@ const AMOSTAS = {
 };
 
 const ALUNOS = [
-    // Empty for now, as requested.
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.05 (1).jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.05.jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.07 (1).jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.07.jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.08 (1).jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.09 (1).jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.09.jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.11 (1).jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.12.jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.23.37.jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.23.38.jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.23.39.jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 21.06.04 (2).jpeg",
+    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-04-04 at 12.21.21.jpeg"
 ];
 
 const GalleryModal = ({ type, onClose }) => {
