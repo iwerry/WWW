@@ -130,20 +130,20 @@ const AMOSTAS = {
 };
 
 const ALUNOS = [
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.05 (1).jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.05.jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.07 (1).jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.07.jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.08 (1).jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.09 (1).jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.09.jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.11 (1).jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.12.jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.23.37.jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.23.38.jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.23.39.jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 21.06.04 (2).jpeg",
-    "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-04-04 at 12.21.21.jpeg"
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.05 (1).jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.05.jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.07 (1).jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.07.jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.08 (1).jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.09 (1).jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.09.jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.11 (1).jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.02.12.jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.23.37.jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.23.38.jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 20.23.39.jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-03-31 at 21.06.04 (2).jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" },
+    { src: "/assets/Alunos/Antonio Ribeiro Duarte/WhatsApp Image 2026-04-04 at 12.21.21.jpeg", credit: "Fotografia: Antônio Ribeiro Duarte" }
 ];
 
 const GalleryModal = ({ type, onClose }) => {
@@ -205,15 +205,30 @@ const GalleryModal = ({ type, onClose }) => {
 
                 <div className="gallery-grid">
                     {currentImages.length > 0 ? (
-                        currentImages.map((src, idx) => (
-                            <div 
-                                key={idx} 
-                                className="gallery-grid-item"
-                                onClick={() => setSelectedImageIndex(idx)}
-                            >
-                                <img src={src} alt="Gallery item" loading="lazy" />
-                            </div>
-                        ))
+                        currentImages.map((item, idx) => {
+                            const src = typeof item === 'string' ? item : item.src;
+                            const credit = typeof item === 'string' ? null : item.credit;
+                            return (
+                                <div 
+                                    key={idx} 
+                                    className="gallery-grid-item"
+                                    onClick={() => setSelectedImageIndex(idx)}
+                                    title={credit || "Foto da Galeria"}
+                                    style={{ position: 'relative' }}
+                                >
+                                    <img src={src} alt="Gallery item" loading="lazy" />
+                                    {credit && (
+                                        <div style={{
+                                            position: 'absolute', bottom: 0, left: 0, right: 0,
+                                            background: 'rgba(0,0,0,0.7)', color: 'white',
+                                            fontSize: '12px', padding: '6px', textAlign: 'center', pointerEvents: 'none'
+                                        }}>
+                                            {credit}
+                                        </div>
+                                    )}
+                                </div>
+                            );
+                        })
                     ) : (
                         <div className="empty-gallery">
                             <p>Ainda estamos reunindo o material maravilhoso para esta categoria. Volte em breve!</p>
@@ -222,28 +237,45 @@ const GalleryModal = ({ type, onClose }) => {
                 </div>
 
                 {/* Fullscreen Slider Overlay */}
-                {selectedImageIndex !== null && currentImages.length > 0 && (
-                    <div className="fullscreen-slider" onClick={() => setSelectedImageIndex(null)}>
-                        <button className="slider-nav prev" onClick={handlePrev}>
-                            <ChevronLeft size={40} />
-                        </button>
-                        
-                        <img 
-                            src={currentImages[selectedImageIndex]} 
-                            alt="Fullscreen" 
-                            className="fullscreen-image" 
-                            onClick={(e) => e.stopPropagation()}
-                        />
-                        
-                        <button className="slider-nav next" onClick={handleNext}>
-                            <ChevronRight size={40} />
-                        </button>
-                        
-                        <button className="slider-close" onClick={() => setSelectedImageIndex(null)}>
-                            <X size={32} />
-                        </button>
-                    </div>
-                )}
+                {selectedImageIndex !== null && currentImages.length > 0 && (() => {
+                    const currentItem = currentImages[selectedImageIndex];
+                    const fullscreenSrc = typeof currentItem === 'string' ? currentItem : currentItem.src;
+                    const fullscreenCredit = typeof currentItem === 'string' ? null : currentItem.credit;
+                    
+                    return (
+                        <div className="fullscreen-slider" onClick={() => setSelectedImageIndex(null)}>
+                            <button className="slider-nav prev" onClick={handlePrev}>
+                                <ChevronLeft size={40} />
+                            </button>
+                            
+                            <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <img 
+                                    src={fullscreenSrc} 
+                                    alt="Fullscreen" 
+                                    className="fullscreen-image" 
+                                    onClick={(e) => e.stopPropagation()}
+                                />
+                                {fullscreenCredit && (
+                                    <div style={{
+                                        marginTop: '15px', color: 'rgba(255,255,255,0.9)', 
+                                        fontSize: '16px', fontWeight: '500', 
+                                        textShadow: '0 2px 4px rgba(0,0,0,0.5)', zIndex: 10
+                                    }}>
+                                        {fullscreenCredit}
+                                    </div>
+                                )}
+                            </div>
+                            
+                            <button className="slider-nav next" onClick={handleNext}>
+                                <ChevronRight size={40} />
+                            </button>
+                            
+                            <button className="slider-close" onClick={() => setSelectedImageIndex(null)}>
+                                <X size={32} />
+                            </button>
+                        </div>
+                    );
+                })()}
             </motion.div>
         </motion.div>
     );
