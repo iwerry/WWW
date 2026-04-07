@@ -258,6 +258,23 @@ export const curriculumData = [
                 "A luz e a sombra esculpem o rosto - observe como pequenas mudanças de direção afetam a textura e a forma.",
                 "Para retratos na janela, direcione seu modelo um pouco para a luz para iluminar os olhos.",
                 "Não esqueça que a expressão é tão importante quanto a técnica de iluminação."
+            ],
+            glossary: [
+                {
+                    category: "Glossário da Semana 5 (Fotografia de Pessoas)",
+                    items: [
+                        { term: "Direção de Modelo", definition: "A arte de deixar a pessoa confortável para que sua essência brilhe naturalmente." },
+                        { term: "Linguagem Corporal", definition: "Postura e os gestos. Uma postura neutra transmite calma, braços cruzados podem denotar autoridade." },
+                        { term: "Squinch", definition: "Uma leve contraidinha na região dos olhos acompanhada de um sorriso suave, que transmite autoconfiança e sedução." },
+                        { term: "Contrapposto", definition: "Técnica de inclinar ou girar levemente a cabeça em oposição à direção do tronco, quebrando a rigidez da pose e trazendo fluidez." },
+                        { term: "Postura das Mãos", definition: "Mãos elegantes são relaxadas; evitamos mostrar a palma chapada para a câmera, preferindo sempre fotografar as laterais das mãos." },
+                        { term: "Iluminação Plana (Flat Lighting)", definition: "A luz vem diretamente de frente, suavizando linhas de expressão e criando uma imagem muito lisonjeira." },
+                        { term: "Iluminação Borboleta (Butterfly)", definition: "Luz vem da frente, de um ponto alto, criando uma sombra elegante abaixo do nariz." },
+                        { term: "Iluminação Loop", definition: "Luz fica a 45 graus, criando uma pequena sombra em forma de laço na bochecha; estilo natural e versátil." },
+                        { term: "Iluminação Rembrandt", definition: "Ilumina um lado do rosto, deixando o outro na sombra, exceto por um charmoso 'triângulo de luz' na bochecha." },
+                        { term: "Iluminação Dividida (Split Lighting)", definition: "Luz de lado iluminando metade do rosto." }
+                    ]
+                }
             ]
         }
     },
@@ -266,8 +283,12 @@ export const curriculumData = [
         title: "Semana 6: Fotografando Objetos",
         description: "A arte de fotografar produtos, comida e e-commerce.",
         locked: false,
-        thumbnail: "/assets/Fotos/Eventos/_MG_2580.jpg",
+        thumbnail: "/assets/Fotos/EstudosDeCasos/162666e9-3d05-4aeb-b6f0-c11195c9223f.jpg",
         content: {
+            videos: [
+                { title: "A Luz em Casa", src: "/assets/6 - Fotografia__A_Luz_em_Casa.mp4", thumbnail: "/assets/Fotos/EstudosDeCasos/162666e9-3d05-4aeb-b6f0-c11195c9223f.jpg" },
+                { title: "Fotografia de Objetos", src: "/assets/6.1 - Fotografia_de_Objetos.mp4", thumbnail: "/assets/Fotos/EstudosDeCasos/c49e22d8507cd1a930ade4f72a37884b.jpg" }
+            ],
             audioPlaylist: [
                 { title: "A arte de esculpir produtos com luz", src: "/assets/6 - A_arte_de_esculpir_produtos_com_luz.mp3" },
                 { title: "A física da luz em superfícies reflexivas", src: "/assets/6 - A_física_da_luz_em_superfícies_reflexivas.mp3" },
@@ -275,7 +296,21 @@ export const curriculumData = [
                 { title: "Iluminação profissional para fotos de comida", src: "/assets/6 - Iluminação_profissional_para_fotos_de_comida.mp3" },
                 { title: "Luz natural ou flash na fotografia still", src: "/assets/6 - Luz_natural_ou_flash_na_fotografia_still.mp3" }
             ],
-            pdf: "/assets/6 -The_Tabletop_Studio.pdf"
+            pdf: "/assets/6 -The_Tabletop_Studio.pdf",
+            glossary: [
+                {
+                    category: "Glossário da Semana 6 (Fotografia de Objetos e Still)",
+                    items: [
+                        { term: "Natureza-Morta (Still Life)", definition: "Fotografia de objetos inanimados onde você tem controle absoluto da cena para transformá-los em arte." },
+                        { term: "Packshot", definition: "Fotografia comercial com fundo branco e luz uniforme, focado em vender o produto de forma direta." },
+                        { term: "Fotografia Editorial/Criativa", definition: "Usa texturas, sombras dramáticas e adereços para gerar desejo e contar uma história." },
+                        { term: "Flat Lay", definition: "Fotografar de cima para baixo (visão de pássaro), organizando objetos de forma harmônica." },
+                        { term: "Trindade da Luz", definition: "Conjunto formado pela Luz Lateral/Contraluz, o Difusor (para suavizar a janela) e o Rebatedor (para preencher sombras)." },
+                        { term: "Controle de Reflexos", definition: "Movimentação cuidadosa do rebatedor e luz para evitar ou favorecer reflexos em vidro e metal." },
+                        { term: "Lei do Quadrado Inverso", definition: "A intensidade da luz cai drasticamente ao afastá-la do objeto. Controlar a distância muda a dureza das sombras." }
+                    ]
+                }
+            ]
         }
     },
     {

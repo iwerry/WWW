@@ -35,15 +35,30 @@ const WeekDetail = ({ week, onClose }) => {
 
                 <div className="panel-content-grid">
                     {/* Video Section - Hero of the Detail */}
-                    {week.content.video && (
+                    {(week.content.video || week.content.videos) && (
                         <div className="content-block video-block">
                             <h3><PlayCircle size={20} /> Aula Visual</h3>
-                            <div className="video-wrapper">
-                                <video controls poster={week.thumbnail || "/assets/DanielRodrigues/CAPA.jpg"}>
-                                    <source src={week.content.video} type="video/mp4" />
-                                    Seu navegador não suporta vídeo.
-                                </video>
-                            </div>
+                            
+                            {week.content.videos ? (
+                                <div className="multiple-videos" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                                    {week.content.videos.map((vid, idx) => (
+                                        <div key={idx} className="video-wrapper">
+                                            {vid.title && <h4 style={{ marginBottom: '8px' }}>{vid.title}</h4>}
+                                            <video controls poster={vid.thumbnail || week.thumbnail || "/assets/DanielRodrigues/CAPA.jpg"}>
+                                                <source src={vid.src} type="video/mp4" />
+                                                Seu navegador não suporta vídeo.
+                                            </video>
+                                        </div>
+                                    ))}
+                                </div>
+                            ) : (
+                                <div className="video-wrapper">
+                                    <video controls poster={week.thumbnail || "/assets/DanielRodrigues/CAPA.jpg"}>
+                                        <source src={week.content.video} type="video/mp4" />
+                                        Seu navegador não suporta vídeo.
+                                    </video>
+                                </div>
+                            )}
                         </div>
                     )}
 

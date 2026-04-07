@@ -21,6 +21,30 @@ const AMOSTAS = {
         "/assets/Fotos/EstudosDeCasos/f0ade5dc-d3ce-497c-a9cd-a5b29d717ab3.jpg",
         "/assets/Fotos/EstudosDeCasos/f7a1006d60b7587d6244511d0682d3e4.jpg"
     ],
+    CasamentosPremiados: [
+        "/assets/Fotos/Casamentos-Premiados/2913436086884b7def79.jpg",
+        "/assets/Fotos/Casamentos-Premiados/29142360866e270dc8a8.jpg",
+        "/assets/Fotos/Casamentos-Premiados/29142360866e285fd9b10.jpg",
+        "/assets/Fotos/Casamentos-Premiados/43841865cfa7eb3a9530.jpg",
+        "/assets/Fotos/Casamentos-Premiados/44764664dcf904f001a0.jpg",
+        "/assets/Fotos/Casamentos-Premiados/49408766829cd6269188.jpg",
+        "/assets/Fotos/Casamentos-Premiados/DAVID-HOFMAN-366-r48.jpg",
+        "/assets/Fotos/Casamentos-Premiados/FDB28-entry-2754-franciscoalvarezfracofotografia_03.jpg",
+        "/assets/Fotos/Casamentos-Premiados/Jesus-Ochoa-71-r41.jpg",
+        "/assets/Fotos/Casamentos-Premiados/Ralf-Czogallik-132-r40.jpg",
+        "/assets/Fotos/Casamentos-Premiados/fabio-colombo_10.jpg",
+        "/assets/Fotos/Casamentos-Premiados/julien-laurent-georges-3321-r69.jpg",
+        "/assets/Fotos/Casamentos-Premiados/mateus-scheibel_1.jpg",
+        "/assets/Fotos/Casamentos-Premiados/mischa-baettig-gallery-76101.jpg",
+        "/assets/Fotos/Casamentos-Premiados/patrick-mateer_22.jpg",
+        "/assets/Fotos/Casamentos-Premiados/peng-zhou-6847-r87.jpg",
+        "/assets/Fotos/Casamentos-Premiados/rafael-pimenta_19.jpg",
+        "/assets/Fotos/Casamentos-Premiados/rafael-pimenta_3.jpg",
+        "/assets/Fotos/Casamentos-Premiados/romeo-mihail_11.jpg",
+        "/assets/Fotos/Casamentos-Premiados/romeo-mihail_2.jpg",
+        "/assets/Fotos/Casamentos-Premiados/romeo-mihail_4.jpg",
+        "/assets/Fotos/Casamentos-Premiados/romeo-mihail_6.jpg"
+    ],
     Eventos: [
         "/assets/Fotos/Eventos/ACB_18-07-2025-17.jpg",
         "/assets/Fotos/Eventos/ACB_18-07-2025-280.jpg",
@@ -160,7 +184,7 @@ const GalleryModal = ({ type, onClose }) => {
                                 className={`gallery-tab-btn ${activeTab === tab ? 'active' : ''}`}
                                 onClick={() => setActiveTab(tab)}
                             >
-                                {tab === 'EstudosDeCasos' ? 'Estudos de Casos' : tab}
+                                {tab === 'EstudosDeCasos' ? 'Estudos de Casos' : tab === 'CasamentosPremiados' ? 'Casamentos Premiados' : tab}
                             </button>
                         ))}
                     </div>
